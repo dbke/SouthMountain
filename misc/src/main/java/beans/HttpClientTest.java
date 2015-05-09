@@ -7,7 +7,9 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import sun.net.www.http.HttpClient;
 
+import javax.annotation.Resource;
 import java.io.IOException;
+import java.net.URI;
 
 /**
  * Created by yangtao.lyt on 2015/5/8.
@@ -17,11 +19,13 @@ import java.io.IOException;
  */
 public class HttpClientTest {
 
+    private static HttpGet httpGet;
+
     public static void main(String[] args) {
 
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
-        HttpGet httpGet = new HttpGet("http://www.baidu.com");
+
 
         try {
             HttpResponse httpResponse = httpClient.execute(httpGet);
@@ -37,4 +41,11 @@ public class HttpClientTest {
 
     }
 
+    public HttpGet getHttpGet() {
+        return httpGet;
+    }
+
+    public void setHttpGet(HttpGet httpGet) {
+        this.httpGet = httpGet;
+    }
 }
