@@ -1,5 +1,6 @@
 package day01;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
@@ -14,11 +15,15 @@ public class LinkedListDemo {
      link.addFirst("abcd4");
 
      System.out.println(link);
-
-     while(!link.isEmpty()){
-         System.out.println(link.removeLast());
-
+     Iterator it = link.iterator();
+     while(it.hasNext()){
+         System.out.println(it.next());
      }
+
+//     while(!link.isEmpty()){
+//         System.out.println(link.removeLast());
+//
+//     }
      System.out.print(link);
 
 
