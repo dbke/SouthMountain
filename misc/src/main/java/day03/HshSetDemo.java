@@ -16,6 +16,7 @@ public class HshSetDemo {
          hs.add("abcd2");
          hs.add("abcd3");
          hs.add("abcd4");
+         hs.add("abcd4");    //set  集合元素不重复
          System.out.print(hs);
 
 
