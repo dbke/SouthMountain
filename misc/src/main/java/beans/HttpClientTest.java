@@ -5,11 +5,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import sun.net.www.http.HttpClient;
 
-import javax.annotation.Resource;
 import java.io.IOException;
-import java.net.URI;
 
 /**
  * Created by yangtao.lyt on 2015/5/8.
